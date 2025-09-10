@@ -1,0 +1,207 @@
+/* Общие стили */
+body {
+    font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    background: linear-gradient(135deg, #f0f0f0, #e0e0e0);
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+    color: #333;
+}
+
+/* Заголовок и шапка */
+header {
+    background: linear-gradient(90deg, #222, #444);
+    color: #fff;
+    text-align: center;
+    padding: 30px 20px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+    position: relative;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 3em;
+    letter-spacing: 2px;
+    font-family: 'Impact', sans-serif;
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
+    transition: transform 0.3s;
+}
+
+header h1:hover {
+    transform: scale(1.05);
+}
+
+header p {
+    margin-top: 10px;
+    font-size: 1.2em;
+    font-weight: 300;
+    letter-spacing: 1px;
+}
+
+/* Основные секции */
+section {
+    max-width: 900px;
+    margin: 30px auto;
+    background-color: rgba(255, 255, 255, 0.9);
+    padding: 25px;
+    border-radius: 12px;
+    box-shadow: 0 8px 16px rgba(0,0,0,0.2);
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+section:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 12px 24px rgba(0,0,0,0.3);
+}
+
+h2 {
+    margin-top: 0;
+    color: #d33;
+    font-family: 'Arial Black', sans-serif;
+    font-size: 2em;
+    border-bottom: 2px solid #d33;
+    padding-bottom: 8px;
+}
+
+/* Описание и изображение */
+.about img {
+    max-width: 100%;
+    height: auto;
+    margin-top: 15px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.about img:hover {
+    transform: scale(1.02);
+    box-shadow: 0 8px 16px rgba(0,0,0,0.3);
+}
+
+/* Стиль для раздела альбома Mayhem */
+#mayhem-album {
+    max-width: 900px;
+    margin: 30px auto;
+    background-color: rgba(255, 255, 255, 0.9);
+    padding: 25px;
+    border-radius: 12px;
+    box-shadow: 0 8px 16px rgba(0,0,0,0.2);
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+#mayhem-album:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 12px 24px rgba(0,0,0,0.3);
+}
+
+#mayhem-album h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    font-family: 'Arial Black', sans-serif;
+    font-size: 2.4em;
+    color: #d33;
+    border-bottom: 2px solid #d33;
+    padding-bottom: 8px;
+}
+
+/* Контент альбома */
+.album-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+
+.album-content img {
+    max-width: 100%;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+    transition: transform 0.3s;
+}
+
+.album-content img:hover {
+    transform: scale(1.02);
+}
+
+.album-description {
+    max-width: 800px;
+    text-align: center;
+    font-size: 1.2em;
+    line-height: 1.5;
+}
+
+.btn-primary {
+    display: inline-block;
+    margin-top: 15px;
+    padding: 12px 24px;
+    background: linear-gradient(135deg, #00c3ff, #005fbb);
+    color: #fff;
+    text-decoration: none;
+    border-radius: 50px;
+    font-weight: bold;
+    font-family: 'Arial Rounded MT Bold', sans-serif;
+    transition: all 0.3s ease;
+}
+
+.btn-primary:hover {
+    background: linear-gradient(135deg, #005fbb, #00c3ff);
+    transform: translateY(-3px);
+    box-shadow: 0 8px 16px rgba(0,0,0,0.3);
+}
+
+/* Контакты */
+.contacts ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.contacts li {
+    margin: 10px 0;
+    font-size: 1.1em;
+    padding-left: 10px;
+    position: relative;
+    transition: all 0.3s;
+}
+
+.contacts li::before {
+    content: "•";
+    color: #d33;
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 1.5em;
+}
+
+.contacts li:hover {
+    color: #d33;
+    font-weight: bold;
+}
+
+/* Подвал */
+footer {
+    text-align: center;
+    padding: 20px 0;
+    background: linear-gradient(90deg, #222, #444);
+    color: #fff;
+    font-size: 1em;
+    margin-top: 40px;
+    box-shadow: inset 0 1px 0 rgba(255,255,255,0.2);
+    transition: background 0.3s;
+}
+
+footer:hover {
+    background: linear-gradient(90deg, #444, #222);
+}
+
+/* Анимации и эффекты */
+@keyframes pulse {
+    0% { transform: scale(1); }
+    50% { transform: scale(1.05); }
+    100% { transform: scale(1); }
+}
+
+h1 {
+    animation: pulse 2s infinite;
+}
